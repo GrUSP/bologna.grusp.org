@@ -1,0 +1,20 @@
+{
+  "name": "bologna.grusp.org",
+  "version": "1.0.0",
+  "description": "Sito PUGBO",
+  "main": "index.html",
+  "repository": "git@github.com:GrUSP/bologna.grusp.org.git",
+  "author": "Tassoman <tassoman@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1"
+  },
+  "scripts": {
+    "serve": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir=./"
+  }
+}

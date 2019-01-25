@@ -10,3 +10,10 @@ Rimaniamo in contatto!
 - [Slack Grusp](https://slack-grusp.herokuapp.com)
 
 PHP User Group Bologna (cc) 2018 - Bologna
+
+### Dev tips
+
+1. Installare yarn
+2. Clonare il repository
+3. `yarn` per installare le dipendenze
+4. `yarn serve` per avviare il server di sviluppo
