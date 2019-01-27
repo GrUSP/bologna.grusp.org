@@ -1,0 +1,33 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Coustard|Nunito|Permanent+Marker');
+
+/*
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Coustard', serif;
+    font-family: 'Permanent Marker', cursive;
+*/
+
+html, body {
+    color: #333;
+}
+nav, footer {
+    background-color: #333;
+    color: #fff;
+}
+.btn-meetup {
+    background-color: #f13a59;
+    color: #fff;
+}
+nav .btn:hover {
+    border: 1px solid #333;
+    background-color: #fff576;
+    color: #333;
+}   
+.btn-facebook {
+    background-color: rgb(66, 103, 178);
+    color: #fff;
+}
+
+.pugbo-script {
+    font-family: 'Permanent Marker', cursive;
+}
