@@ -9,6 +9,16 @@
 
 html, body {
     color: #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a, a:hover {
+    color: #fff576;
 }
 nav, footer {
     background-color: #333;
@@ -22,12 +32,24 @@ nav .btn:hover {
     border: 1px solid #333;
     background-color: #fff576;
     color: #333;
-}   
+}
 .btn-facebook {
     background-color: rgb(66, 103, 178);
     color: #fff;
 }
-
+#evento {
+    background-color: rgba(0,0,0, 0.8);
+    color: #fff;
+}
 .pugbo-script {
     font-family: 'Permanent Marker', cursive;
+    color: #fff576;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#attribution {
+    font-size: .8rem;
 }
