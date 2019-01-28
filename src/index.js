@@ -17,12 +17,14 @@ $(document).ready(function(){
         console.log(json);
         $('body').css('background-color', json.color);
         $('body').css('background-image', 'url('+json.urls.regular+')');
-        $('#img_author').attr({
+        $('#imgAuthor').attr({
             'href': json.user.links.html+'?utm_source=PUGBO%20Website&utm_medium=referral',
             'target': '_blank',
         }).text(json.user.name);
+        $('#imgDownload').attr('href', json.links.download_location);
     }).catch(err => {
         console.error(err);
+        $('#attribution').remove();
     });
 
     $.getJSON(meetup, function(d) {
@@ -47,7 +49,6 @@ $(document).ready(function(){
                 'class': 'btn btn-lg',
                 'role': 'button',
             }).text('Partecipa').appendTo(corpo);
-            // $('<p>').html('<a id="partecipa" class="btn btn-lg" role="button" href="'++'">Partecipa!</a>').appendTo(corpo);
             $(titolo).prependTo(corpo);
             $(corpo).appendTo('#evento');
 
@@ -63,6 +64,7 @@ $(document).ready(function(){
         }
     })
     .fail(function(err){
+        $('#evento').remove();
         console.error(err);
     })
 });
