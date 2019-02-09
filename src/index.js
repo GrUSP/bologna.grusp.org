@@ -61,6 +61,7 @@ $(document).ready(function(){
             }
         } else {
             $('#evento').remove();
+            $('#claim').css('margin-top', '50%');
         }
     })
     .fail(function(err){
