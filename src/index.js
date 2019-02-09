@@ -61,11 +61,12 @@ $(document).ready(function(){
             }
         } else {
             $('#evento').remove();
-            $('#claim').css('margin-top', '50%');
+            $('#claim').addClass('center-screen');
         }
     })
     .fail(function(err){
         $('#evento').remove();
+        $('#claim').addClass('center-screen');
         console.error(err);
     })
 });
