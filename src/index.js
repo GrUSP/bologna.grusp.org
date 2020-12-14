@@ -1,32 +1,12 @@
 import $ from 'jquery';
-import Unsplash, { toJson } from 'unsplash-js';
 require('@fortawesome/fontawesome-free/js/all');
 
-const unsplash = new Unsplash({
-    applicationId: "5d73355c273ab8dce93f9f0a7be063ae2a6e0802abc98c86545b0c02a17c15da",
-    secret: "3c707b81c0a8fd37ce629e5302ba765b337bb06275fff9618e4f8ba91f1e3f8f",
-});
 
 const meetup = 'https://api.meetup.com/pugbo-grusp/events?callback=?&sign=true&photo-host=secure&page=1&has_ended=false';
 var titolo = $('<h5 class="card-title">');
 var corpo = $('<div class="card-body">');
 
-$(document).ready(function(){
-
-    unsplash.photos.getRandomPhoto({ query: "developers"}).then(toJson).then(json => {
-        console.log(json);
-        $('body').css('background-color', json.color);
-        $('body').css('background-image', 'url('+json.urls.regular+')');
-        $('#imgAuthor').attr({
-            'href': json.user.links.html+'?utm_source=PUGBO%20Website&utm_medium=referral',
-            'target': '_blank',
-        }).text(json.user.name);
-        $('#imgDownload').attr('href', json.links.download_location);
-    }).catch(err => {
-        console.error(err);
-        $('#attribution').remove();
-    });
-
+$(function(){
     $.getJSON(meetup, function(d) {
         console.log(d.data[0]);
         if (d.data.length > 0) {
