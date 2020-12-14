@@ -11,10 +11,10 @@
     "@fortawesome/fontawesome-free": "^5",
     "bootstrap": "^4",
     "jquery": "^3",
-    "popper.js": "^1",
-    "unsplash-js": "^7"
+    "popper.js": "^1"
   },
   "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
     "parcel-bundler": "^1"
   },
   "scripts": {
