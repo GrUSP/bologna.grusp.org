@@ -1,8 +1,7 @@
 {
   "name": "bologna.grusp.org",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Sito PUGBO",
-  "main": "index.html",
   "repository": "git@github.com:GrUSP/bologna.grusp.org.git",
   "author": "Tassoman <tassoman@gmail.com>",
   "license": "MIT",
@@ -14,10 +13,10 @@
     "popper.js": "^1"
   },
   "devDependencies": {
-    "parcel": "^2.0.0-beta"
+    "parcel": "^2.0.0-beta.3.1"
   },
   "scripts": {
     "serve": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir docs --log-level none"
+    "build": "parcel build ./src/index.html --log-level none --no-source-maps --dist-dir docs"
   }
 }
